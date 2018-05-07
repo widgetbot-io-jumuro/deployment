@@ -1,0 +1,72 @@
+# NEDB configuration
+# see https://github.com/louischatriot/nedb/wiki/Creating-loading-the-database
+database:
+  filename: ./data/database.json
+
+# Express web server configuration
+express:
+  # The port to host the site on
+  port: 7000
+
+  # GraphiQL - online GraphQL editor
+  # Test it out in your browser at /api/graphql
+  graphiql: true
+
+  # Rate limiting of the API
+  # see https://www.npmjs.com/package/express-rate-limit#configuration
+  rateLimit:
+    # how long to keep records of requests in memory.
+    windowMs: 900000
+    # max number of connections during windowMs milliseconds before sending a 429 response.
+    max: 100
+    # max number of connections during windowMs before starting to delay responses.
+    delayAfter: 20
+    # how long to delay the response, multiplied by number of recent hits
+    delayMs: 100
+
+# Discord configuration
+discord:
+  # Bot token
+  token: ''
+
+  # Admins of the bot
+  admins:
+  - '294916911194570754'
+  - '111783814740594688'
+
+  # Message cache
+  cache:
+    # Amount of messages to cache
+    history: 50
+    # Timeout in seconds
+    timeout: 1
+
+  # Message reaction emotes
+  # Simply upload some emotes to any server, and copy their IDs here
+  # To disable a reaction, set it to false
+  reactions:
+    actions: :actions:440207217283563550
+    ban: :ban_them:440203314399936512
+    mute: :mute_them:440203349564850176
+    info: :show_their_info:440203338819043330
+
+# Embed configuration
+# NOTE: Anything in this namespace is public
+embed:
+  # Default embed theme
+  theme:
+    colors:
+      primary: '#fff'
+      accent: '#7289da'
+      background: '#36393E'
+    light: false
+    compact: false
+
+  # Embed configuration
+  config:
+    # Notifications to display on embed load
+    notifications:
+      - type: success
+        title: Connected to upstream
+        message: Successfully connected to Socket.IO server
+        level: success

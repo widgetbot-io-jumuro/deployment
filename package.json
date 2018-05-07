@@ -1,0 +1,25 @@
+{
+  "name": "widgetbot-server",
+  "main": "widgetbot.min.js",
+  "homepage": "https://widgetbot.io",
+  "scripts": {
+    "init": "npm install",
+    "start": "node widgetbot.min.js",
+    "dev": "node widgetbot.js"
+  },
+  "private": true,
+  "author": "samdd <sam@samdd.me>",
+  "dependencies": {
+    "discord.js": "^11.3.2",
+    "express": "^4.16.3",
+    "express-graphql": "^0.6.12",
+    "express-rate-limit": "^2.11.0",
+    "graphql": "^0.13.0",
+    "lodash": "^4.17.10",
+    "nedb": "^1.8.0",
+    "node-yaml": "^3.1.1",
+    "on-build-webpack": "^0.1.0",
+    "socket.io": "^2.1.0",
+    "winston": "^2.4.1"
+  }
+}

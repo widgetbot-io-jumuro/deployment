@@ -1,2 +1,10 @@
-# distro
-The distribution script(s) for the server
+# WidgetBot Server
+
+## How to get started
+
+To get the server running, simply run:
+
+```js
+npm run init
+npm start
+```
