@@ -4,7 +4,7 @@
   "homepage": "https://widgetbot.io",
   "scripts": {
     "init": "npm install",
-    "start": "node widgetbot.min.js",
+    "start": "sed -i -e \"s/7000/$PORT/g\" ./data/config.yml && node widgetbot.min.js",
     "dev": "node widgetbot.js"
   },
   "private": true,

@@ -6,7 +6,7 @@ database:
 # Express web server configuration
 express:
   # The port to host the site on
-  port: 46398
+  port: 7000
 
   # GraphiQL - online GraphQL editor
   # Test it out in your browser at /api/graphql
