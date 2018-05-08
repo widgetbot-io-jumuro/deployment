@@ -27,7 +27,7 @@ express:
 # Discord configuration
 discord:
   # Bot token
-  token: ''
+  token: 'NDQzMTk4MzgxODAwNTU0NDk2.DdJ47g.76sHCa0-3kjLPunIiKykHGQZRCw'
 
   # Admins of the bot
   admins:
